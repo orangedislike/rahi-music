@@ -2,283 +2,54 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>RAAHI MUSIC – Feel The Road</title>
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RAAHI MUSIC — Feel The Road</title>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-
-:root{
-  --bg:#050607;
-  --panel:#0b0d10;
-  --line:#24282e;
-  --text:#f4f4f4;
-  --muted:#8a8f98;
-  --orange:#ff6a00;
-  --orange2:#ff9a3c;
-}
-
-body{
-  min-height:100vh;
-  font-family:Arial,Helvetica,sans-serif;
-  background:
-  radial-gradient(circle at 20% 80%,#281103 0%,transparent 30%),
-  var(--bg);
-  color:var(--text);
-}
-
-.app{
-  max-width:1100px;
-  margin:auto;
-  padding:20px;
-}
-
-header{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:15px;
-  padding:10px 0 25px;
-  border-bottom:1px solid var(--line);
-}
-
-.brand{
-  display:flex;
-  align-items:center;
-  gap:12px;
-}
-
-.logo{
-  width:50px;
-  height:50px;
-  border-radius:50%;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  background:linear-gradient(135deg,#ff6a00,#ffb15c);
-  font-size:25px;
-}
-
-.brand h1{
-  font-size:27px;
-  letter-spacing:2px;
-}
-
-.brand p{
-  color:var(--orange2);
-  font-size:10px;
-  letter-spacing:5px;
-  margin-top:4px;
-}
-
-.status{
-  padding:10px 15px;
-  border:1px solid var(--line);
-  border-radius:20px;
-  color:#aaa;
-  font-size:13px;
-}
-
-.hero{
-  margin-top:25px;
-  padding:35px 25px;
-  border:1px solid var(--line);
-  border-radius:20px;
-  background:linear-gradient(145deg,#101317,#08090b);
-}
-
-.hero h2{
-  font-size:34px;
-  margin-bottom:10px;
-}
-
-.hero h2 span{
-  color:var(--orange);
-}
-
-.hero p{
-  color:var(--muted);
-  line-height:1.6;
-}
-
-.player{
-  margin-top:25px;
-  padding:20px;
-  border:1px solid var(--line);
-  border-radius:18px;
-  background:var(--panel);
-}
-
-.player-title{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  margin-bottom:15px;
-}
-
-.player-title h3{
-  font-size:20px;
-}
-
-.badge{
-  color:#111;
-  background:var(--orange);
-  padding:6px 10px;
-  border-radius:15px;
-  font-size:11px;
-  font-weight:bold;
-}
-
-.video{
-  width:100%;
-  aspect-ratio:16/9;
-  border:0;
-  border-radius:14px;
-  background:#000;
-}
-
-.open{
-  display:inline-block;
-  margin-top:15px;
-  padding:12px 18px;
-  border-radius:12px;
-  background:#ff6a00;
-  color:white;
-  text-decoration:none;
-  font-weight:bold;
-}
-
-.songs{
-  margin-top:25px;
-}
-
-.songs h2{
-  margin-bottom:15px;
-}
-
-.song{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:15px;
-  padding:16px;
-  margin-bottom:10px;
-  border:1px solid var(--line);
-  border-radius:14px;
-  background:#0b0d10;
-}
-
-.song-info strong{
-  display:block;
-  margin-bottom:5px;
-}
-
-.song-info span{
-  color:var(--muted);
-  font-size:13px;
-}
-
-.play{
-  border:0;
-  border-radius:50%;
-  width:45px;
-  height:45px;
-  background:#171b20;
-  color:var(--orange);
-  font-size:18px;
-}
-
-footer{
-  text-align:center;
-  color:#666;
-  font-size:12px;
-  padding:30px 0 10px;
-}
+:root{--bg:#050505;--card:#101010;--line:#252525;--text:#fff;--muted:#999;--orange:#ff6a00}
+body{min-height:100vh;background:radial-gradient(circle at 50% 0%,#281100 0,transparent 38%),var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif}
+.app{width:min(1100px,100%);margin:auto;padding:22px}
+header{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px}
+.logo{font-size:25px;font-weight:800;letter-spacing:2px}.logo span{color:var(--orange)}
+.badge{border:1px solid var(--line);padding:9px 13px;border-radius:20px;color:#bbb;font-size:12px}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;background:linear-gradient(135deg,#111,#080808);border:1px solid var(--line);border-radius:28px;padding:26px;overflow:hidden}
+.hero h1{font-size:clamp(42px,7vw,78px);line-height:.95;margin:40px 0 18px}.hero h1 span{color:var(--orange)}
+.hero p{color:var(--muted);font-size:18px;line-height:1.6;max-width:560px}
+.cover{min-height:430px;border-radius:22px;background:url('cover.jpg') center/cover;filter:grayscale(100%);box-shadow:0 20px 60px #000}
+.section-title{margin:30px 0 14px;font-size:22px}
+.player{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:20px}
+.now{display:flex;align-items:center;gap:16px}.thumb{width:72px;height:72px;border-radius:14px;background:url('cover.jpg') center/cover;filter:grayscale(100%);flex:none}
+.song-title{font-size:19px;font-weight:700}.artist{color:var(--muted);margin-top:5px}
+audio{width:100%;margin-top:18px}
+.note{color:#777;font-size:12px;margin-top:12px}
+@media(max-width:760px){.app{padding:14px}.hero{grid-template-columns:1fr;padding:18px}.cover{min-height:390px;order:-1}.hero h1{margin:12px 0;font-size:48px}}
 </style>
 </head>
-
 <body>
-
 <div class="app">
-
-<header>
-  <div class="brand">
-    <div class="logo">🚚</div>
-    <div>
-      <h1>RAAHI MUSIC</h1>
-      <p>FEEL THE ROAD</p>
-    </div>
-  </div>
-
-  <div class="status">● MUSIC ONLINE</div>
-</header>
+<header><div class="logo">RAAHI <span>MUSIC</span></div><div class="badge">FEEL THE ROAD</div></header>
 
 <section class="hero">
-  <h2>Music for the <span>Road.</span></h2>
-  <p>
-    Listen to your favourite music while travelling.
-    Simple, clean and mobile-friendly music experience.
-  </p>
+  <div>
+    <h1>Music for the <span>Road.</span></h1>
+    <p>Listen to your favourite licensed music with a clean, simple and mobile-friendly RAAHI MUSIC experience.</p>
+  </div>
+  <div class="cover" aria-label="RAAHI MUSIC cover"></div>
 </section>
 
+<h2 class="section-title">🎵 Now Playing</h2>
 <section class="player">
-
-  <div class="player-title">
-    <h3>🎵 Now Playing</h3>
-    <span class="badge">YOUTUBE</span>
+  <div class="now">
+    <div class="thumb"></div>
+    <div><div class="song-title">Your Licensed Song</div><div class="artist">RAAHI MUSIC</div></div>
   </div>
-
-  <iframe
-    class="video"
-    src="https://www.youtube.com/embed/QMSIPuKEvps"
-    title="RAAHI MUSIC Player"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    allowfullscreen>
-  </iframe>
-
-  <a
-    class="open"
-    href="https://music.youtube.com/watch?v=QMSIPuKEvps"
-    target="_blank"
-    rel="noopener">
-    ▶ Open in YouTube Music
-  </a>
-
+  <audio controls preload="metadata">
+    <!-- Add a licensed MP3 named "song.mp3" beside this index.html -->
+    <source src="song.mp3" type="audio/mpeg">
+    Your browser does not support audio.
+  </audio>
+  <div class="note">Background playback depends on the browser and phone's battery/background restrictions.</div>
 </section>
-
-<section class="songs">
-
-<h2>🎶 Featured Music</h2>
-
-<div class="song">
-  <div class="song-info">
-    <strong>Mujhse Mohabbat Ka</strong>
-    <span>YouTube Music</span>
-  </div>
-  <button class="play"
-    onclick="document.querySelector('.video').scrollIntoView({behavior:'smooth'})">
-    ▶
-  </button>
 </div>
-
-<div class="song">
-  <div class="song-info">
-    <strong>RAAHI MUSIC</strong>
-    <span>Feel The Road</span>
-  </div>
-  <button class="play"
-    onclick="document.querySelector('.video').scrollIntoView({behavior:'smooth'})">
-    ▶
-  </button>
-</div>
-
-</section>
-
-<footer>
-  © 2026 RAAHI MUSIC • Feel The Road
-</footer>
-
-</div>
-
 </body>
 </html>
